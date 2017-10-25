@@ -12,6 +12,9 @@ import {
   View
 } from 'react-native';
 
+import Blink from './src/components/Blink'
+import FlexDirectionBasics from './src/components/FlexDirectionBasics'
+
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
     'Cmd+D or shake for dev menu',
@@ -22,17 +25,22 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
+      
+      // <View style={styles.container}>
+      //   <Text style={styles.welcome}>
+      //     Welcome to React Native!
+          
+      //   </Text>
+      //   <Text style={styles.instructions}>
+      //     To get started, edit App.js
+      //   </Text>
+      //   <Text style={styles.instructions}>
+      //     {instructions}
+      //   </Text>
+        
+      // </View>
+      <FlexDirectionBasics />
+      
     );
   }
 }
@@ -54,4 +62,14 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+    fontWeight: 'normal',
+  },
+
 });
