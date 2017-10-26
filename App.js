@@ -16,6 +16,10 @@ import Blink from './src/components/Blink'
 import FlexDirectionBasics from './src/components/FlexDirectionBasics'
 import JustifyContentBasics from './src/components/JustifyContentBasics'
 import PizzaTranslator from './src/components/PizzaTranslator'
+import ButtonBasics from './src/components/ButtonBasics'
+import Touchable from './src/components/Touchables'
+import FlatListBasics from './src/components/FlatLIstBasics'
+import SectionListBasics from './src//components/SectionListBasics'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -43,7 +47,10 @@ export default class App extends Component<{}> {
       // </View>
       // <FlexDirectionBasics />
       // <JustifyContentBasics />
-      <PizzaTranslator />
+      // <ButtonBasics />
+      // <Touchable />
+      // <FlatListBasics />
+      <SectionListBasics />
     );
   }
 }
